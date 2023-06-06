@@ -5,7 +5,7 @@
 
 import os
 import requests
-from dotenv import dotenv_values
+from dotenv import load_dotenv
 load_dotenv()
 openai_api_key = os.environ.get('OPENAI_API_KEY')
 
