@@ -38,7 +38,7 @@ function App () {
       { content: sentMessage, sender: 'user' }
     ])
     // Send message and selected condition/severity to backend for processing
-    const response = await fetch('http://127.0.0.1:5000/chat', {
+    const response = await fetch(`${process.env.REACT_APP_PROXY_URL}/chat`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
