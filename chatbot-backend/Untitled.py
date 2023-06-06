@@ -3,11 +3,12 @@
 
 # In[3]:
 
-
+import os
 import requests
 from dotenv import dotenv_values
-env_vars = dotenv_values(".env")
-OPENAI_API_KEY = env_vars["OPENAI_API_KEY"]
+load_dotenv()
+openai_api_key = os.environ.get('OPENAI_API_KEY')
+
 
 def get_chatbot_response(user_message, condition, severity):
     # ChatGPT API endpoint
