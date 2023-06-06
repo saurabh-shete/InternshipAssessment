@@ -7,7 +7,7 @@ import os
 import requests
 from dotenv import load_dotenv
 load_dotenv()
-openai_api_key = os.environ.get('OPENAI_API_KEY')
+OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 
 def get_chatbot_response(user_message, condition, severity):
